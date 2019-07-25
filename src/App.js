@@ -1,7 +1,12 @@
 import React from "react";
+import Map from "./pages/main";
 
 function App() {
-  return <div className="App">lucas</div>;
+  return (
+    <React.Fragment>
+      <Map />
+    </React.Fragment>
+  );
 }
 
 export default App;
