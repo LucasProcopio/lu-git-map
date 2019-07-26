@@ -25,6 +25,11 @@ class MapGL extends React.Component {
     window.removeEventListener("resize", this.resizeWindow);
   }
 
+  // Criate func para salvar locale
+  _onClickMap(e) {
+    console.log(e.lngLat);
+  }
+
   resizeWindow = () => {
     this.setState({
       viewport: {
@@ -40,9 +45,9 @@ class MapGL extends React.Component {
       <ReactMapGL
         {...this.state.viewport}
         mapboxApiAccessToken={MAPTOKEN}
-        mapStyle="mapbox://styles/mapbox/basic-v9"
+        mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={viewport => this.setState({ viewport })}
-      />
+        onClick={this._onClickMap} />
     );
   }
 }
