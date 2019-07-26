@@ -1,12 +1,8 @@
 import React from "react";
-import Map from "./pages/main";
+import Main from "./pages/main";
 
 function App() {
-  return (
-    <React.Fragment>
-      <Map />
-    </React.Fragment>
-  );
+  return <Main />;
 }
 
 export default App;
