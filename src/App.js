@@ -1,14 +1,19 @@
 import React from "react";
+
+import { Provider } from "react-redux";
+import store from "./store";
+
 import Main from "./pages/main";
-import { Reset } from './styles/reset'
+
+import { Reset } from "./styles/reset";
 
 function App() {
   return (
-    <React.Fragment>
+    <Provider store={store}>
       <Reset />
       <Main />
-    </React.Fragment>
-  )
+    </Provider>
+  );
 }
 
 export default App;
