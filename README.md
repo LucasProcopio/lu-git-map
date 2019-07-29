@@ -8,6 +8,11 @@
 <img src="public/images/lugitmap.gif" width="480" height="226">
 </p>
 
+---
+
+## Live
+click [Here](http://lugitmap.surge.sh/)
+
 ## Instalation
 
 - Clone this repository, at the root folder on the terminal run `npm install` or `yarn` to install all dependencies
