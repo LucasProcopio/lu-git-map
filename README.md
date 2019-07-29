@@ -5,7 +5,7 @@
 - features: users can add their favorites github users to a list and a location on the map just by clicking on it and submiting the form with the github username
 
 <p align="center">
-<img src="public/images/lugitmap.gif" width="600" height="380">
+<img src="public/images/lugitmap.gif" width="480" height="226">
 </p>
 
 ## Instalation
