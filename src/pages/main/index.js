@@ -1,29 +1,24 @@
 import React from "react";
-import { Component } from "react";
-import ReactMapGL from "react-map-gl";
-const MAPTOKEN =
-  "pk.eyJ1IjoibHVjYXNwcm9jb3BpbyIsImEiOiJjanlpZ2VzZW8wYTJ5M25wNjgyYWJpajJ4In0.20zwEWbus5sLGYqDRLzzpQ";
+import { ToastContainer } from "react-toastify";
 
-class Map extends Component {
-  state = {
-    viewport: {
-      width: window.innerWidth,
-      height: window.innerHeight,
-      latitude: -22.5132,
-      longitude: -47.7736,
-      zoom: 14
-    }
-  };
+import Sidebar from "../../components/Sidebar";
+import MapGl from "../../components/MapGL";
+import Modal from "../../components/Modal";
 
+import { Container } from "./styles";
+import "react-toastify/dist/ReactToastify.css";
+
+class Main extends React.Component {
   render() {
     return (
-      <ReactMapGL
-        {...this.state.viewport}
-        mapboxApiAccessToken={MAPTOKEN}
-        onViewportChange={viewport => this.setState({ viewport })}
-      />
+      <Container>
+        <MapGl />
+        <Sidebar />
+        <Modal />
+        <ToastContainer />
+      </Container>
     );
   }
 }
 
-export default Map;
+export default Main;

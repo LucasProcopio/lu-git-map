@@ -1,11 +1,18 @@
 import React from "react";
-import Map from "./pages/main";
+
+import { Provider } from "react-redux";
+import store from "./store";
+
+import Main from "./pages/main";
+
+import { Reset } from "./styles/reset";
 
 function App() {
   return (
-    <React.Fragment>
-      <Map />
-    </React.Fragment>
+    <Provider store={store}>
+      <Reset />
+      <Main />
+    </Provider>
   );
 }
 
